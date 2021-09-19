@@ -1,321 +1,322 @@
-/* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
-
-:root {
-  --color-primary: #ffbe00;
-  --font-family-p: "Poppins", sans-serif;
-  --font-family-h: "Playfair Display", serif;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: var(--font-family-p);
-  overflow-x: hidden;
-  color: #2e2e30;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-family-h);
-}
-
-.btn {
-  background-color: var(--color-primary);
-  border-radius: 30px;
-  padding: 10px;
-}
-
-.btn:hover,
-.phone .nav-link:hover {
-  background-color: #0b0320;
-  color: #ffffff;
-}
-
-.btn-outline-dark {
-  background-color: transparent;
-}
-
-.color-primary {
-  color: var(--color-primary);
-}
-
-/* navbar */
-.navbar {
-  box-shadow: 0px 0px 20px 0px #dddddd8c;
-}
-.navbar-nav .nav-link {
-  margin-right: 15px;
-}
-
-.navbar-nav .nav-link {
-  color: #0b0320;
-}
-.navbar-nav .nav-link:hover {
-  color: var(--color-primary) !important;
-}
-
-/* homepage section */
-.homepage-section {
-  background-image: url("../img/banner-main.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.homepage-section .home {
-  background-color: #ffffff;
-  padding-bottom: 100px;
-  opacity: 0.9;
-}
-
-.home-content h1 {
-  font-size: 3em;
-  letter-spacing: 2px;
-  line-height: 1.3em;
-  color: #474747;
-}
-
-.home-content {
-  margin-top: 150px;
-}
-
-.img-box img {
-  height: 350px;
-  margin-left: 60px;
-  margin-top: 150px;
-}
-
-/* about us section */
-.img-box-about img {
-  height: 300px;
-  border-radius: 20px;
-  border: 1px dashed #858383;
-  padding: 10px;
-}
-
-.food img {
-  margin-left: 100px;
-  height: 120px;
-  animation: review-animation 8s infinite linear;
-}
-
-@keyframes review-animation {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-50px, 0);
-  }
-  10% {
-    transform: translate(0, 0);
-  }
-}
-
-/* services */
-.services {
-  background-color: #0b0320;
-  color: white;
-  padding: 20px;
-}
-
-.services-box {
-  animation: service-two-animation 10s infinite linear;
-  height: 350px;
-  margin-left: 100px;
-}
-
-@keyframes service-two-animation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* =========================== faq questions ==================== */
-
-.faq-list {
-  list-style: none;
-  padding: 0;
-}
-
-.faq-list li {
-  margin: 30px 0;
-  border: 1px solid rgb(205, 205, 205);
-  padding: 12px 15px;
-  margin: 0px auto 30px;
-  text-align: left;
-  width: 250px;
-  background-color: white;
-  color: #0b0320;
-  border-radius: 10px;
-}
-
-.faq-list .faq-heading::before {
-  content: "+";
-  font-size: 20px;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: -5px;
-  font-weight: 900;
-  color: #c2c2c2;
-}
-
-.faq-list .the-active .faq-heading::before {
-  content: "-";
-}
-
-.faq-heading {
-  position: relative;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 800;
-}
-
-.faq-heading:hover {
-  color: var(--color-primary);
-}
-
-.faq-text {
-  display: none;
-  font-size: 10px;
-}
-
-/* =============================================== */
-
-/* download section */
-
-.download-app {
-  animation: download-animation 3s infinite linear;
-}
-@keyframes download-animation {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -20px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-/* ========= download list steps ==============*/
-.download-content li {
-  list-style-type: none;
-  display: block;
-  padding: 20px 20px 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 20px 0px #dddddd52;
-  box-shadow: 0px 0px 20px 0px #dddddd52;
-  margin-bottom: 30px;
-  max-width: 390px;
-  font-weight: 500;
-  font-size: 20px;
-  color: #0b0320;
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-  border: 1px solid transparent;
-}
-
-.download-content li:hover {
-  border: 1px solid #ffbe00;
-}
-
-.download-content li span {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: #ffbe00;
-  color: #0b0320;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 25px;
-  margin-right: 15px;
-  -webkit-box-shadow: 0px 0px 20px 0px #dddddd52;
-  box-shadow: 0px 0px 20px 0px #dddddd52;
-}
-
-.app-icons:hover {
-  transform: scale(1.1);
-}
-/* ==========download list steps end ================= */
-
-/* reservation section */
-.reservation {
-  background-color: #0b0320;
-  color: white;
-  border-bottom-right-radius: 20px;
-}
-
-.reservation img {
-  height: 400px;
-  animation: service-two-animation 10s infinite linear;
-  margin-left: 30px;
-}
-
-.reserve-date-box {
-  background-color: white;
-  padding: 10px;
-  border-radius: 30px;
-}
-
-/* delivery section */
-
-.delivery-content {
-  margin-top: 70px;
-}
-.delivery img {
-  height: 400px;
-}
-
-/* footer */
-
-footer {
-  background-color: #0b0320;
-  color: white;
-  padding: 30px;
-}
-
-footer .form-control {
-  height: 35px;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 0px 20px 0px #dddddd7d;
-  box-shadow: 0px 0px 20px 0px #a5a5a57d;
-  border: 0;
-  padding-left: 20px;
-  font-size: 15px;
-}
-
-
-footer ul {
-  list-style: none;
-}
-
-/* make image responsive on small device */
-@media (max-width: 600px) {
-  .home-content {
-    margin-top: 40px;
-  }
-  .img-box img {
-    display: none;
-  }
-
-  /* .img-box-about img {
+    /* fonts */
+    
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+     :root {
+        --color-primary: #DD7230;
+        --font-family-p: "Poppins", sans-serif;
+        --font-family-h: 'Piedra', cursive;
+        ;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: var(--font-family-p);
+        overflow-x: hidden;
+        color: #2e2e30;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-family-h);
+    }
+    
+    .btn {
+        background-color: var(--color-primary);
+        border-radius: 30px;
+        padding: 10px;
+    }
+    
+    .btn:hover,
+    .phone .nav-link:hover {
+        background-color: #0b0320;
+        color: #ffffff;
+    }
+    
+    .btn-outline-dark {
+        background-color: transparent;
+    }
+    
+    .color-primary {
+        color: var(--color-primary);
+    }
+    /* navbar */
+    
+    .navbar {
+        box-shadow: 0px 0px 20px 0px #dddddd8c;
+    }
+    
+    .navbar-nav .nav-link {
+        margin-right: 15px;
+    }
+    
+    .navbar-nav .nav-link {
+        color: #0b0320;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        color: var(--color-primary) !important;
+    }
+    /* homepage section */
+    
+    .homepage-section {
+        background-image: url("../img/banner-main.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    .homepage-section .home {
+        background-color: #ffffff;
+        padding-bottom: 100px;
+        opacity: 0.9;
+    }
+    
+    .home-content h1 {
+        font-size: 3em;
+        letter-spacing: 2px;
+        line-height: 1.3em;
+        color: #474747;
+    }
+    
+    .home-content {
+        margin-top: 150px;
+    }
+    
+    .img-box img {
+        height: 350px;
+        padding: 10px;
+        margin-left: 60px;
+        margin-top: 150px;
+        border-radius: 20px;
+        border: 1px dashed #858383;
+    }
+    /* about us section */
+    
+    .img-box-about img {
+        height: 300px;
+        border-radius: 20px;
+        border: 1px dashed #858383;
+        padding: 10px;
+    }
+    
+    .food img {
+        margin-left: 100px;
+        height: 120px;
+        animation: review-animation 8s infinite linear;
+    }
+    
+    @keyframes review-animation {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(-50px, 0);
+        }
+        10% {
+            transform: translate(0, 0);
+        }
+    }
+    /* services */
+    
+    .services {
+        background-color: #0b0320;
+        color: white;
+        padding: 20px;
+    }
+    
+    .services-box {
+        animation: service-two-animation 10s infinite linear;
+        height: 350px;
+        margin-left: 100px;
+    }
+    
+    @keyframes service-two-animation {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    /* =========================== faq questions ==================== */
+    
+    .faq-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .faq-list li {
+        margin: 30px 0;
+        border: 1px solid rgb(205, 205, 205);
+        padding: 12px 15px;
+        margin: 0px auto 30px;
+        text-align: left;
+        width: 250px;
+        background-color: white;
+        color: #0b0320;
+        border-radius: 10px;
+    }
+    
+    .faq-list .faq-heading::before {
+        content: "+";
+        font-size: 20px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -5px;
+        font-weight: 900;
+        color: #c2c2c2;
+    }
+    
+    .faq-list .the-active .faq-heading::before {
+        content: "-";
+    }
+    
+    .faq-heading {
+        position: relative;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 800;
+    }
+    
+    .faq-heading:hover {
+        color: var(--color-primary);
+    }
+    
+    .faq-text {
+        display: none;
+        font-size: 10px;
+    }
+    /* =============================================== */
+    /* download section */
+    
+    .download-app {
+        animation: download-animation 3s infinite linear;
+    }
+    
+    @keyframes download-animation {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(0, -20px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    /* ========= download list steps ==============*/
+    
+    .download-content li {
+        list-style-type: none;
+        display: block;
+        padding: 20px 20px 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 20px 0px #dddddd52;
+        box-shadow: 0px 0px 20px 0px #dddddd52;
+        margin-bottom: 30px;
+        max-width: 390px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #0b0320;
+        -webkit-transition: 0.5s all ease;
+        transition: 0.5s all ease;
+        border: 1px solid transparent;
+    }
+    
+    .download-content li:hover {
+        border: 1px solid #ffbe00;
+    }
+    
+    .download-content li span {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #ffbe00;
+        color: #0b0320;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 25px;
+        margin-right: 15px;
+        -webkit-box-shadow: 0px 0px 20px 0px #dddddd52;
+        box-shadow: 0px 0px 20px 0px #dddddd52;
+    }
+    
+    .app-icons:hover {
+        transform: scale(1.1);
+    }
+    /* ==========download list steps end ================= */
+    /* reservation section */
+    
+    .reservation {
+        background-color: #0b0320;
+        color: white;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .reservation img {
+        height: 400px;
+        animation: service-two-animation 10s infinite linear;
+        margin-left: 30px;
+    }
+    
+    .reserve-date-box {
+        background-color: white;
+        padding: 10px;
+        border-radius: 30px;
+    }
+    /* delivery section */
+    
+    .delivery-content {
+        margin-top: 70px;
+    }
+    
+    .delivery img {
+        height: 400px;
+    }
+    /* footer */
+    
+    footer {
+        background-color: #0b0320;
+        color: white;
+        padding: 30px;
+    }
+    
+    footer .form-control {
+        height: 35px;
+        border-radius: 50px;
+        -webkit-box-shadow: 0px 0px 20px 0px #dddddd7d;
+        box-shadow: 0px 0px 20px 0px #a5a5a57d;
+        border: 0;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    
+    footer ul {
+        list-style: none;
+    }
+    /* make image responsive on small device */
+    
+    @media (max-width: 600px) {
+        .home-content {
+            margin-top: 40px;
+        }
+        .img-box img {
+            display: none;
+        }
+        /* .img-box-about img {
       height: 200px;
   } */
-}
+    }
